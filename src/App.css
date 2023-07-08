@@ -1,38 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label {
+  font-size: 13px;
+  color: gray;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20%;
+}
+
+.inputLabel {  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.submitButton {
+  background-color: #0069cc;
   color: white;
+  border-radius: 4px;
+  padding: .5rem 2rem;
+  border: none;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.submitButton:hover {
+  background-color: #0092cc;  
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input {  
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  box-shadow: none;
+  border: solid 0.5px rgba(27,27,27,.3607843137254902);
+  outline: none;
+}
+
+.input:focus {  
+  border: solid 1px #0069cc;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
 }
